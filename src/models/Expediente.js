@@ -31,6 +31,7 @@ const Expediente = sequelize.define('Expediente', {
   fecha_creacion: {
     type: DataTypes.DATEONLY,
     allowNull: false,
+    defaultValue: DataTypes.NOW // Asigna la fecha y hora actuales por defecto
   },
   notas: {
     type: DataTypes.TEXT,

@@ -1,9 +1,8 @@
-// usuario.model.js
 const { Sequelize, DataTypes } = require('sequelize');
-const  sequelize = require('../config/database.config'); // <-- Importación con llaves
+const  sequelize = require('../config/database.config'); 
 const bcrypt = require('bcryptjs');
 
-// Define el modelo
+
 const Usuario = sequelize.define('Usuario', {
   nombre: {
     type: DataTypes.STRING,
