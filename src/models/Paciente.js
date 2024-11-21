@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database.config');
 const Analisis = require('./Analisis');
 
-const Paciente = sequelize.define('Paciente', {
+const Paciente = sequelize.define('paciente', {
   nombre: {
     type: DataTypes.STRING,
     allowNull: false,
